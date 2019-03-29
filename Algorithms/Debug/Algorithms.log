@@ -1,7 +1,0 @@
-﻿  linked_list.c
-C:\Users\tikaw\OneDrive\Desktop\Study\Algorithms\Algorithms\linked_list.c(21): warning C4013: 'malloc' undefined; assuming extern returning int
-C:\Users\tikaw\OneDrive\Desktop\Study\Algorithms\Algorithms\linked_list.c(21): warning C4047: 'initializing': 'Node *' differs in levels of indirection from 'int'
-C:\Users\tikaw\OneDrive\Desktop\Study\Algorithms\Algorithms\linked_list.c(31): warning C4013: 'free' undefined; assuming extern returning int
-C:\Users\tikaw\OneDrive\Desktop\Study\Algorithms\Algorithms\linked_list.c(35): warning C4047: 'initializing': 'Node *' differs in levels of indirection from 'node **'
-C:\Users\tikaw\OneDrive\Desktop\Study\Algorithms\Algorithms\linked_list.c(70): warning C4013: 'system' undefined; assuming extern returning int
-  Algorithms.vcxproj -> C:\Users\tikaw\OneDrive\Desktop\Study\Algorithms\Debug\Algorithms.exe

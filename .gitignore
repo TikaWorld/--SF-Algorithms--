@@ -1,7 +1,4 @@
-Algorithms/*.vcxproj
-Algorithms/*.vcxproj.filters
-Algorithms/*.vcxproj.user
-*.sln
+
 Debug
 .vs
 
