@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 typedef struct node {
 	struct node* right;
@@ -42,16 +43,4 @@ void postorderPrint(Node* node) {
 	if (node->right != NULL)
 		inorderPrint(node->right);
 	printf("%d", node->value);
-}
-
-int main()
-{
-	Node** node[] = { createNode(1), createNode(2), createNode(3) };
-	allocateNode(node[0], node[1], node[2]);
-	preorderPrint(node[0]);
-	inorderPrint(node[0]);
-	postorderPrint(node[0]);
-	for (int i = 0; i < 3; i++) {
-		free(node[i]);
-	}
 }
