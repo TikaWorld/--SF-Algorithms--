@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef struct node {
-	struct node* right;
-	struct node* left;
-	int value;
-}Node;
+#include "BinaryTree.h"
 
 Node* createNode(int value) {
 	Node* node = malloc(sizeof(Node));
