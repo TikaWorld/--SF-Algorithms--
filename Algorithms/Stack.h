@@ -4,6 +4,7 @@
 
 typedef struct stack {
 	int* value;
+	int top;
 }Stack;
 
 Stack* createStack(int num);

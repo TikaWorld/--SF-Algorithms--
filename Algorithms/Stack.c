@@ -1,10 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "Stack.h"
 
-typedef struct stack {
-	int* value;
-	int top;
-}Stack;
 
 Stack* createStack(int num) {
 	Stack* stack;
