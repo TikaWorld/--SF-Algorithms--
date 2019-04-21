@@ -1,20 +1,17 @@
-#include "Graph.h"
+#include "BinaryTree.h"
 
 int main()
 {
-	Node* a = create_node(1);
-	Node* b = create_node(2);
-	Node* c = create_node(3);
-	Node* d = create_node(4);
-	Node* e = create_node(5);
-	connect_node(a, b);
-	connect_node(a, c);
-	connect_node(a, e);
-	connect_node(b, c);
-	connect_node(c, d);
-	connect_node(c, e);
-	connect_node(d, e);
+	Node* nodes[] = { createNode(10), createNode(5), createNode(17), createNode(1), createNode(6), createNode(17), createNode(14) };
 
-	DFS(a);
+	binarySearchInput(nodes[0], nodes[1]);
+	binarySearchInput(nodes[0], nodes[2]);
+	binarySearchInput(nodes[0], nodes[3]);
+	binarySearchInput(nodes[0], nodes[4]);
+	binarySearchInput(nodes[0], nodes[5]);
+	binarySearchInput(nodes[0], nodes[6]);
+
+	preorderPrint(nodes[0]);
+
 	return 0;
 }

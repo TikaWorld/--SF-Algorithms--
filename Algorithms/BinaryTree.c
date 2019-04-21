@@ -16,6 +16,29 @@ void allocateNode(Node* node, Node* left, Node* right) {
 	node->left = left;
 }
 
+void binarySearchInput(Node* root, Node* input) {
+	Node* parent = root;
+	while (1) 
+	{
+		if (input->value < parent->value) {
+			if (parent->left == NULL) {
+				parent->left = input;
+				return;
+			}
+			else
+				parent = parent->left;
+		}
+		else {
+			if (parent->right == NULL) {
+				parent->right = input;
+				return;
+			}
+			else
+				parent = parent->right;
+		}
+	}
+}
+
 void preorderPrint(Node* node) {
 	printf("%d\n", node->value);
 	if (node->left != NULL)

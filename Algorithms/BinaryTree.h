@@ -10,6 +10,8 @@ typedef struct node {
 
 Node* createNode(int value);
 
+void binarySearchInput(Node* root, Node* input);
+
 void allocateNode(Node* node, Node* left, Node* right);
 
 void preorderPrint(Node* node);

@@ -32,11 +32,11 @@ void connect_node(Node* node_1, Node* node_2) {
 void disconnect_node(Node* node) {
 	for (int i = 0; i < node->order; i++) {
 		if (node->trunk[i] != NULL)
-		for (int j = 0; j < node->trunk[i]->order; j++)
-			if (node->trunk[i]->trunk[j] == node) {
+			for (int j = 0; j < node->trunk[i]->order; j++)
+				if (node->trunk[i]->trunk[j] == node) {
 				node->trunk[i]->trunk[j] = NULL;
 				break;
-			}
+				}
 		node->trunk[i] = NULL;
 	}
 }
