@@ -22,12 +22,12 @@ void deleteQueue(Queue* queue) {
 	free(queue);
 }
 
-void push(Queue* queue, int value) {
+void queuePush(Queue* queue, int value) {
 	queue->value[queue->last] = value;
 	queue->last++;
 }
 
-int pop(Queue* queue) {
+int queuePop(Queue* queue) {
 	queue->first--;
 	return queue->value[queue->first];
 }
