@@ -2,4 +2,4 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int Test();
+int test();
